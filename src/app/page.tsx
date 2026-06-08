@@ -6,6 +6,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { TextAnimate } from "@/components/ui/text-animate";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -52,9 +53,10 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
+          <TextGenerateEffect
+            words={DATA.summary}
+            className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert font-normal whitespace-pre-wrap"
+          />
         </BlurFade>
       </section>
       <section id="skills">
