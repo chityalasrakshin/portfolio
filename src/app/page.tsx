@@ -105,7 +105,7 @@ export default function Page() {
                   Achievements
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I don't wait for perfect. I build, break, and ship.
+                  I don&apos;t wait for perfect. I build, break, and ship.
                 </h2>
               </div>
             </div>
