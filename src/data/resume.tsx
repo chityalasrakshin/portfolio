@@ -96,9 +96,9 @@ export const DATA = {
     {
       company: "Coforge",
       href: "https://www.coforge.com/",
-      badges: ["On-site"],
+      badges: [],
       location: "On-site",
-      title: "Graduate Engineering Trainee (Intern)",
+      title: "Graduate Engineering Trainee (On-site, Hyderabad)",
       logoUrl: "/assets/coforge.png",
       start: "June 2026",
       end: "Sep 2026",
